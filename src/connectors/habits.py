@@ -1,4 +1,4 @@
- """
+"""
 Personal habits connector -- GitHub public events API
 
 No API key required for public data (rate-limited to 60 requests/hour
