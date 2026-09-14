@@ -27,7 +27,13 @@ SPORTS_TEAMS = [
     {"name": "Chelsea", "team_id": "133610"},
 ]
 
-GITHUB_USERNAME = os.environ.get("GITHUB_HABITS_USERNAME", "sahil7879")
+#GITHUB_USERNAME = os.environ.get("GITHUB_HABITS_USERNAME", "sahil7879")
+_default_usernames = "torvalds,gvanrossum,octocat,dhh,mitchellh"
+GITHUB_USERNAMES = [
+    name.strip()
+    for name in os.environ.get("GITHUB_HABITS_USERNAMES", _default_usernames).split(",")
+    if name.strip()
+]
 
 # Which connectors run on each pipeline execution. Comment one out to pause it.
 ENABLED_CONNECTORS = [
