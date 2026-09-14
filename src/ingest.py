@@ -34,7 +34,7 @@ CONNECTOR_FACTORIES = {
     "stocks": lambda: StocksConnector(config.STOCK_TICKERS),
     "sports": lambda: SportsConnector(config.SPORTS_TEAMS),
     "air_quality": lambda: AirQualityConnector(config.AIR_QUALITY_LOCATIONS),
-    "habits": lambda: HabitsConnector(config.GITHUB_USERNAME),
+    "habits": lambda: HabitsConnector(config.GITHUB_USERNAMES),
 }
 
 
