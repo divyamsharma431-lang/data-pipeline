@@ -78,17 +78,7 @@ Run the tests:
 pytest tests/ -v
 ```
 
-## Automating it
-
-The included GitHub Actions workflow (`.github/workflows/daily_fetch.yml`)
-runs `src/ingest.py` every day at 08:00 UTC and commits the updated
-database back to the repo. Enable it by pushing this repo to GitHub —
-no secrets or configuration needed since none of the APIs require keys.
-Trigger a manual run any time from the Actions tab.
-
-To deploy the dashboard so it's publicly viewable, push to GitHub and
-connect the repo on [Streamlit Community Cloud](https://streamlit.io/cloud)
-(free), pointing at `dashboard/app.py`.
+ 
 
 ## Customizing
 
