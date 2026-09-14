@@ -99,3 +99,5 @@ Edit `src/config.py` to change:
 - **Partial failure tolerance**: if one API is down, the others still run
   and get written to the database — the pipeline only reports failure if
   every source fails.
+  # THE LIVE APP LINK IS:
+  https://data-pipeline-ez4jtilgxpf7goqp4np9dp.streamlit.app/
