@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Keep the database out of version control if it grows large.
+# Comment this out if you want GitHub Actions to commit it daily (see workflow).
+# data/pipeline.db
